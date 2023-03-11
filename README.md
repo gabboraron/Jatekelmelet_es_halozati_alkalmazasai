@@ -1,0 +1,2 @@
+# Jatekelmelet_es_halozati_alkalmazasai
+Játékelmélet és hálózati alkalmazásai
