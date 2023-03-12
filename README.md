@@ -107,7 +107,7 @@
 - Evolúciós játékelmélet (Populációdinamika)
 - Kombinatorikus játékok (Sakk és más táblajátékok)
 
-> * In 1985, when Americans were asked how many close friends they had, the most common answer was "three". In 2004, the most common answer was "zero". We now have fewer friends across class, racial, economic, and political lines, because we have fewer friends -- period. And as you just discovered for yourself, the fewer "repeat interactions" there are, the more distrust will spread.* [ NICKY CASE -  "THE EVOLUTION OF COOPERATION (http://ncase.me/trust/)"](http://ncase.me/trust/)
+> *In 1985, when Americans were asked how many close friends they had, the most common answer was "three". In 2004, the most common answer was "zero". We now have fewer friends across class, racial, economic, and political lines, because we have fewer friends -- period. And as you just discovered for yourself, the fewer "repeat interactions" there are, the more distrust will spread.* [ NICKY CASE -  "THE EVOLUTION OF COOPERATION (http://ncase.me/trust/)"](http://ncase.me/trust/)
 
 ### Racionalitás
 A közgazdaságtanban és játékelméletben gyakran felteszik, hogy a résztvevők tökéletesen racionálisak. Azaz, a saját hasznosságukat szeretnék maximalizálni, ennek érdekében képesek tetszőlegesen komplex eszmefuttatásokra és ismerik a lehetséges kimeneteleket és a számukra legkedvezőbbet választják ezek közül.
@@ -122,10 +122,10 @@ A közgazdaságtanban és játékelméletben gyakran felteszik, hogy a résztvev
 egy altatós hússal, s jóízüen elfogyasztaná. Ha három oroszlán van, akkor az első megeszi a húst, a másik kettö tehetetlenül nézi. Amikor a legfürgébb megette a
 húst, a másik kettő ott marad az altatós hússal, s az elöbb tisztázottak szerint nem ennék meg. ...
 
-> **Common Knowledge**
-> - Én tudom, te tudod.
-> - Én tudom hogy te tudod, te tudod hogy én tudom.
-> - Én tudom hogy te tudod hogy én tudom...
+**Common Knowledge**
+- Én tudom, te tudod.
+- Én tudom hogy te tudod, te tudod hogy én tudom.
+- Én tudom hogy te tudod hogy én tudom...
 
 A Common Knowledge nem triviális következményeit a játékelméletben (*Az összefoglalót a chatGPT generálta 2023/03/11 -án*):
 - A koordináció megkönnyítése: Ha a játékosok között közös tudás van egy adott tényről, akkor ez megkönnyíti a koordinációt és növeli az együttműködést. Például, ha két játékos között közös tudás van arról, hogy mindketten ugyanazon játékot játszák, akkor könnyebb számukra koordinálni a stratégiáikat.
@@ -133,3 +133,41 @@ A Common Knowledge nem triviális következményeit a játékelméletben (*Az ö
 - Lehetővé teszi a bizonytalanság csökkentését: Ha egy játékos tudja, hogy a többi játékos tudja, hogy ő tudja egy bizonyos információt, akkor ez csökkenti a bizonytalanságot, ami lehetővé teszi számára, hogy magabiztosabb döntéseket hozzon.
 - Előnyök a kooperatív játékokban: A Common Knowledge fontos szerepet játszik a kooperatív játékokban, mivel a koalíciók közötti együttműködésre van szükség ahhoz, hogy az összes játékos számára optimális eredményt érjenek el.
 - Bonyolultság növekedése: Azonban a Common Knowledge fogalma bonyolultabbá is teszi a játékot, mivel az összes játékosnak meg kell értenie, hogy mi a közös tudás, mi az, ami csak egyes játékosok számára ismert, és hogy ez hogyan befolyásolja a stratégiájukat.
+
+
+**Piros kalap (v Aumann) játék**
+- 100 ember ül körbe, mindenkin egy kalap ami kék vagy piros. Mindenki csak a többiekét látja (+ nincs beszéd). Thf h minden kalap piros.
+- Egy ceremóniamester a kör közepén bejelenti hogy percenként megüt egy gongot. Miután megüti, ha valaki tudja hogy piros kalap volt rajta, el kell hagynia a termet. (világos hogy a gongütésre senki sem hagyja el a termet - senki nem kap általa új információt)
+- Viszont ha az első gongütés előtt kihírdeti hogy ’Legalább 1 piros kalap van a teremben’ (ez nem lep meg senkit hiszem mindenki látja a többi 99 embert piros kalapban)...
+- 99 gongütéssig nem történik semmi, de a századikra mindenki feláll és kimegy.
+
+**Az alábbi kritériumok szükségesek ahhoz, hogy a tömeg bölcsessége kiaknázható legyen:**
+- a vélemények sokszínűsége
+- függetlenség
+- decentralizáció (hierarchia hiánya)
+- létezzen egy aggregációs mechanizmus
+
+**Ellsberg-paradoxon:**
+
+*’People overwhelmingly prefer taking on risk in situations where they know specific odds rather than an alternative risk scenario in which the odds are completely ambiguous - they will always choose a known probability of winning over an unknown probability of winning even if the known probability is low and the unknown probability could be a guarantee of winning.’* prefer the devil they know
+
+**Ultimátum játék**
+- Adott két játékos. Az egyiknek felajánlanak egy összeget (pl. 10$), amit valamilyen arányban megoszthat a másik játékossal. Ha azonban a második játékos kevesli a rá jutó részt, akkor megvétózhatja az elosztást. Ekkor egyikük sem kap semmit.
+- Játékelmélet: A második játékos hasznot maximalizál ezért bármilyen keveset is kap elfogadja. Az első játékos ezt felismerve a lehetőlegkevesebbet adja.
+- Valóság: A legtöbb játékos elfelezi a kapott pénzt. Az összeg 30%-nálkisebb ajánlatokat rendszerint visszautasítják.
+
+**Diktátor játék**
+- Adott két játékos. Az egyiknek felajánlanak egy összeget, amit valamilyen arányban megoszthat a másik játékossal. A második játékosnak semmilyen beleszólása nincs az elosztásba.
+- Játékelmélet: A diktátor hasznot maximalizál, ezért semmit nem ad a másiknak.
+- Valóság: A legtöbb játékos az összeg 30%-át továbbadja.
+
+**Bizalom játék**
+- Adott két játékos. Az egyik kap egy összeget, amit valamilyen arányban megoszthat a másik játékossal. A második játékos az átadott pénz háromszorosát kapja, amiből valamennyit visszajuttathat, ha úgy dönt.
+- Játékelmélet: A második játékos hasznot maximalizál, ezért nem küld vissza semmit. Az első játékos ezt felismerve nem ad semmit.
+- Valóság: A legtöbb játékos több mint az összeg felét átküldi. Általában legalább ennyit vissza is küldenek
+
+**Bizalom játék (variáns)**
+- Adott négy játékos, akik csak számítógépen keresztül tudnak kommunikálni. Mindegyiküknek adnak egy fix zsetonmennyiséget, amit később pénzre válthatnak. Dönthetnek, hogy a zsetonjukból valamennyit a közösbe raknak. A közösben lévő zsetonmennyiséget a játék végén megduplázzák és négy felé osztják. Tehát ha mindegyikük kooperál, akkor megduplázzák a pénzüket, míg ha csak egyvalaki, akkor az elveszíti a berakott pénzének a felét
+- A résztvevők 13%-a mindig kooperált, 20%-uk potyautasként viselkedett, a maradék pedig a társai viselkedésétől függően cselekedte az előbbit, vagy az utóbbit.
+- Hosszú távon mindenki ugyanolyan jól járt (kialakult az egyensúly).
+- Később tesztjátékokon megfigyelték, hogy a játékosok konzisztensen ugyanazon stratégiák mentén hoztak döntéseket, tehát ’programozottan’ cselekedtek
